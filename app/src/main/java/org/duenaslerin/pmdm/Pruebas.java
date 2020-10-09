@@ -15,7 +15,7 @@ public class Pruebas extends AppCompatActivity {
         LinearLayout layout = new LinearLayout(this);
         Spinner spinner = new Spinner(this);
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_dropdown_item);
-        adapter.add("Lunes");
+        adapter.add("Lunes1");
         adapter.add("Martes");
         adapter.add("Miércoles");
         adapter.add("Jueves");
