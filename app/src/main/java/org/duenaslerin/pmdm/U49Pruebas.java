@@ -7,7 +7,7 @@ import android.widget.ArrayAdapter;
 import android.widget.LinearLayout;
 import android.widget.Spinner;
 
-public class Pruebas extends AppCompatActivity {
+public class U49Pruebas extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
