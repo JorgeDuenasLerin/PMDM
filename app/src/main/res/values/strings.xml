@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">PMDM</string>
+    <string name="app_mensaje">Hola mundo!</string>
 </resources>
