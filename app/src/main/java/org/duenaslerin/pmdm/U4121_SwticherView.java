@@ -11,7 +11,7 @@ import android.widget.LinearLayout;
 import android.widget.LinearLayout.LayoutParams;
 import android.widget.ViewSwitcher;
 
-public class U4121_TEMPORAL extends AppCompatActivity {
+public class U4121_SwticherView extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
