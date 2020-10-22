@@ -2,6 +2,8 @@ package org.duenaslerin.pmdm;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.graphics.Color;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -49,6 +51,11 @@ public class U4LayoutControles extends AppCompatActivity {
         ImageView iv = new ImageView(this);
 
         lv.addView(iv);
+
+
+        LinearLayout recuperadoFila = (LinearLayout) lv.getChildAt(2);
+        View recuperadoElemento = (View) recuperadoFila.getChildAt(2);
+        recuperadoElemento.setBackgroundColor(Color.BLACK);
 
         setContentView(lv);
     }
