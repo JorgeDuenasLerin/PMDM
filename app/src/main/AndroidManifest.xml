@@ -11,6 +11,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".U500_LayoutsXML"></activity>
         <activity android:name=".U413_WebView">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -18,14 +19,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <!--
-        <activity android:name=".U4LayoutControles"></activity>
-        <activity android:name=".U4LayoutsEventos" />
-        <activity android:name=".U410EjemploToast"></activity>
-        <activity android:name=".U49Pruebas"></activity>
-        <activity android:name=".SegundaActividad" />
-        <activity android:name=".IntegraccionGit" />
-        -->
     </application>
 
 </manifest>
