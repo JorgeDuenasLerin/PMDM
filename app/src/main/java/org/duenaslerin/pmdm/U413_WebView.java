@@ -17,13 +17,19 @@ public class U413_WebView extends AppCompatActivity {
 
         WebSettings settings = wbView.getSettings();
 
-        //settings.setJavaScriptEnabled(true);
+        settings.setJavaScriptEnabled(true);
+        settings.setUserAgentString("Mozilla/5.0 (Linux; U; Android 2.0; en-us; Droid Build/ESD20) AppleWebKit/530.17 (KHTML, like Gecko) Version/4.0 Mobile Safari/530.17");
+
         //wbView.loadUrl("https://play.google.com/store/apps");
 
-        wbView.loadUrl("https://site.educa.madrid.org/ies.villablanca.madrid/index.php/departamento-de-informatica/");
+        //wbView.loadUrl("http://site.educa.madrid.org/ies.villablanca.madrid/index.php/departamento-de-informatica/");
         // Usar local host
-        //wbView.loadUrl("http://10.0.2.2:8000/index.html");
+        wbView.loadUrl("http://10.0.2.2:8080/");
+        //wbView.loadUrl("https://meneame.net");
 
-        setContentView(wbView);
+        LinearLayout ll = new LinearLayout(this);
+        ll.addView(wbView, new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT,LinearLayout.LayoutParams.MATCH_PARENT));
+
+        setContentView(ll);
     }
 }

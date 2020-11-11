@@ -18,7 +18,7 @@
         <activity android:name=".U413_WebView" />
         <activity android:name=".U6022_Comunicacion" />
         -->
-        <activity android:name=".U49Pruebas">
+        <activity android:name=".U6022_Comunicacion">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

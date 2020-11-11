@@ -4,24 +4,21 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".U6010_CicloVidaFragment">
+    tools:context=".MisPrimerosPasosXML">
 
-    <TextView
-        android:id="@+id/textView9"
+    <Button
+        android:id="@+id/miboton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="MiprimerFragmento"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:text="Mi super botón!!!"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <fragment
-        android:id="@+id/fragment"
-        android:name="org.duenaslerin.pmdm.U6010_PrimerFragmento"
+    <TextView
+        android:id="@+id/milabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+        android:text="Pulsa el botón"
+        app:layout_constraintEnd_toEndOf="@+id/miboton"
+        app:layout_constraintTop_toBottomOf="@+id/miboton" />
 </androidx.constraintlayout.widget.ConstraintLayout>
