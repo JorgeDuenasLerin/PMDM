@@ -11,14 +11,17 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.DarkActionBar">
+
         <!--
         <activity android:name=".U6010_CicloVidaFragment"></activity>
         <activity android:name=".U5000_LayoutsXML" />
         <activity android:name=".U5010_LayoutGuias" />
         <activity android:name=".U413_WebView" />
         <activity android:name=".U6022_Comunicacion" />
+        <activity android:name=".U6023_Datos"></activity>
+        <activity android:name=".U6023_VM_Datos"></activity>
         -->
-        <activity android:name=".U6022_Comunicacion">
+        <activity android:name=".U6023_Datos">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
