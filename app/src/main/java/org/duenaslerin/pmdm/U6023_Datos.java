@@ -31,9 +31,23 @@ public class U6023_Datos extends AppCompatActivity {
             public void run() {
                 while(true){
                     // Desde otro Thread podemos mandar la info de forma segura
-                    datos.postValue(Math.random());
+                    datos.postValue(0.0);
                     try {
-                        Thread.sleep(10000);
+                        Thread.sleep(100);
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
+                }
+            }
+        }).start();
+
+        new Thread(new Runnable() {
+            public void run() {
+                while(true){
+                    // Desde otro Thread podemos mandar la info de forma segura
+                    datos.postValue(1.0);
+                    try {
+                        Thread.sleep(100);
                     } catch (InterruptedException e) {
                         e.printStackTrace();
                     }

@@ -7,7 +7,8 @@ import android.os.Bundle;
 import android.widget.TextView;
 
 public class U6022_Comunicacion extends AppCompatActivity
-    implements U6022_Fragmento.CuandoPulseBotonListener{
+    //implements U6022_Fragmento.CuandoPulseBotonListener
+    {
 
 
     TextView tv;
@@ -29,15 +30,20 @@ public class U6022_Comunicacion extends AppCompatActivity
         // Forma con el evento Attach de los fragmentos
         if (fragment instanceof U6022_Fragmento) {
             U6022_Fragmento headlinesFragment = (U6022_Fragmento) fragment;
-            headlinesFragment.estableceManejadorEvento(this);
+            headlinesFragment.estableceManejadorEvento(new U6022_Fragmento.CuandoPulseBotonListener() {
+                @Override
+                public void hanPulsadoElBoton(String mensaje) {
+                    tv.setText(mensaje);
+                }
+            });
         }
 
     }
-
+    /*
     @Override
     public void hanPulsadoElBoton(String mensaje) {
         // Hacer acción
         // estableceremos un mensaje en textView
         tv.setText(mensaje);
-    }
+    }*/
 }
