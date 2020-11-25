@@ -8,7 +8,6 @@ import android.util.Log;
 import android.widget.TextView;
 
 public class U6022_Comunicacion extends AppCompatActivity
-    implements U6022_Fragmento.CuandoPulseBotonListener
     {
 
 
@@ -36,18 +35,19 @@ public class U6022_Comunicacion extends AppCompatActivity
             headlinesFragment.estableceManejadorEvento(new U6022_Fragmento.CuandoPulseBotonListener() {
                 @Override
                 public void hanPulsadoElBoton(String mensaje) {
-                    hanPulsadoElBotonFuncionDeLaActividad(mensaje);
+                    //hanPulsadoElBoton(mensaje);
+                    tv.setText(mensaje);
                 }
             });
         }
 
-    }uirew
+    }
 
-
+    /*
     @Override
-    public void hanPulsadoElBotonFuncionDeLaActividad(String mensaje) {
+    public void hanPulsadoElBotonFuncionDeLa(String mensaje) {
         // Hacer acción
         // estableceremos un mensaje en textView
         tv.setText(mensaje);
-    }
+    }*/
 }
