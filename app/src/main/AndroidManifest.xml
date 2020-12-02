@@ -12,7 +12,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.DayNight">
-
+        <activity android:name=".U10002_OtraActividad"></activity>
         <!--
         <activity android:name=".U6010_CicloVidaFragment"></activity>
         <activity android:name=".U5000_LayoutsXML" />
