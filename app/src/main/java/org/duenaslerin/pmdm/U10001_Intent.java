@@ -1,8 +1,6 @@
 package org.duenaslerin.pmdm;
 
-import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 
 import android.Manifest;
@@ -16,7 +14,7 @@ import android.widget.Toast;
 
 public class U10001_Intent extends AppCompatActivity {
 
-    private static final int REQUEST_CODE = 0x00001; // Número aleatorio único en la app
+    private static final int REQUEST_CODE_TO_CALL = 0x00001; // Número aleatorio único en la app
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -71,7 +69,7 @@ public class U10001_Intent extends AppCompatActivity {
             intentLlamar();
         } else {
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
-                requestPermissions(new String[] { Manifest.permission.CALL_PHONE }, REQUEST_CODE); // Marca única que me invento
+                requestPermissions(new String[] { Manifest.permission.CALL_PHONE }, REQUEST_CODE_TO_CALL); // Marca única que me invento
             }
         }
     }
@@ -79,7 +77,7 @@ public class U10001_Intent extends AppCompatActivity {
     @Override
     public void onRequestPermissionsResult(int requestCode, String[] permissions, int[] grantResults) {
         switch (requestCode) {
-            case REQUEST_CODE: // Marca única que recibo
+            case REQUEST_CODE_TO_CALL: // Marca única que recibo
                 // If request is cancelled, the result arrays are empty.
                 if (grantResults.length > 0 &&
                         grantResults[0] == PackageManager.PERMISSION_GRANTED) {
