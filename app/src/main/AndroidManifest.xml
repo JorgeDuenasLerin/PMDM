@@ -12,12 +12,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.DayNight">
-        <activity android:name=".U11_ArquitecturaPrincipal">
+        <activity android:name=".U12000_ListaDeElementos">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity android:name=".U11_ArquitecturaPrincipal">
+
         </activity>
         <!--
         <activity android:name=".U6010_CicloVidaFragment"></activity>
