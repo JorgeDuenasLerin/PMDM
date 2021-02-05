@@ -33,8 +33,7 @@
         <activity android:name=".U5054_Permisos"></activity>
         <activity android:name=".U10001_Intent"></activity>
         -->
-        <activity android:name=".U10001_Intent">
-
+        <activity android:name=".AccederDatos">
         </activity>
     </application>
 

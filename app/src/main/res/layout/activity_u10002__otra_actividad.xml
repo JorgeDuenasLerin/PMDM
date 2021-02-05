@@ -4,26 +4,25 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".U6023_Datos">
+    tools:context=".U10002_OtraActividad">
 
-    <TextView
-        android:id="@+id/u6022_output"
+    <Button
+        android:id="@+id/button2Activity"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:onClick="clickCerrar"
+        android:text="Cierra"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView10"
+        android:id="@+id/tvMSG"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:lineSpacingExtra="30sp"
-        android:text="__rr_"
-        android:letterSpacing="1.2"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:text="Mensaje"
+        app:layout_constraintBottom_toTopOf="@+id/button2Activity"
+        app:layout_constraintEnd_toEndOf="@+id/button2Activity"
+        app:layout_constraintStart_toStartOf="@+id/button2Activity" />
 </androidx.constraintlayout.widget.ConstraintLayout>
