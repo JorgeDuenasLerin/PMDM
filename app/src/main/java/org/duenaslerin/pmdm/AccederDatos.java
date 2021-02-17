@@ -1,6 +1,8 @@
 package org.duenaslerin.pmdm;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.lifecycle.Observer;
+import androidx.lifecycle.ViewModelProvider;
 
 import android.os.Bundle;
 import android.util.Log;
@@ -16,8 +18,7 @@ import java.net.URL;
 public class AccederDatos extends AppCompatActivity {
 
     TextView tv;
-
-    final StringBuffer content = new StringBuffer();
+    AccederDatosViewModel vm;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,36 +27,14 @@ public class AccederDatos extends AppCompatActivity {
 
         tv = findViewById(R.id.textViewOutput);
 
+        vm = new ViewModelProvider(this).get(AccederDatosViewModel.class);
 
-        Thread thread = new Thread(new Runnable() {
-
+        vm.obtenerDatos().observe(this, new Observer<String>() {
             @Override
-            public void run() {
-                try  {
-                    URL url = new URL("http://172.26.110.100:8000/polls/api/question/");
-                    HttpURLConnection con = (HttpURLConnection) url.openConnection();
-                    con.setRequestMethod("GET");
-
-                    BufferedReader in = new BufferedReader(
-                            new InputStreamReader(con.getInputStream()));
-                    String inputLine;
-                    //StringBuffer content = new StringBuffer();
-
-                    while ((inputLine = in.readLine()) != null) {
-                        content.append(inputLine);
-                    }
-                    in.close();
-
-                    Log.d("Prueba", content.toString());
-
-                } catch (Exception e) {
-                    e.printStackTrace();
-                }
+            public void onChanged(String s) {
+                // Actualizar el UI
+                tv.setText(s);
             }
         });
-
-        thread.start();
-
-
     }
 }
