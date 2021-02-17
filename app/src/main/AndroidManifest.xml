@@ -12,6 +12,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.DayNight">
+        <activity android:name="arquitectura.ListadoPreguntas"></activity>
         <activity android:name=".U12000_ListaDeElementos">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -19,9 +20,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".U11_ArquitecturaPrincipal">
-
-        </activity>
+        <activity android:name=".U11_ArquitecturaPrincipal"></activity>
         <!--
         <activity android:name=".U6010_CicloVidaFragment"></activity>
         <activity android:name=".U5000_LayoutsXML" />
@@ -33,8 +32,7 @@
         <activity android:name=".U5054_Permisos"></activity>
         <activity android:name=".U10001_Intent"></activity>
         -->
-        <activity android:name=".AccederDatos">
-        </activity>
+        <activity android:name=".AccederDatos"></activity>
     </application>
 
 </manifest>

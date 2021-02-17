@@ -9,6 +9,8 @@ import android.util.Log;
 import android.webkit.WebView;
 import android.widget.TextView;
 
+import org.duenaslerin.pmdm.R;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
